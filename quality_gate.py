@@ -21,7 +21,7 @@ with open("metrics.json", "r") as file:
 accuracy = metrics["accuracy"]
 
 # Quality gate: minimum acceptable accuracy is 70%
-if accuracy < 1.01:
+if accuracy < 0.85:
     raise ValueError(
         f"Quality gate failed: accuracy is {accuracy}"
     )
